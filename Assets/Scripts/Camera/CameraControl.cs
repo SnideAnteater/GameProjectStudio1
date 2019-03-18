@@ -18,6 +18,7 @@ public class CameraControl : MonoBehaviour
 
     void Awake()
     {
+        //
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         transform.position = new Vector3(player.position.x, player.position.y, transform.position.z);
     }
