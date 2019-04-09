@@ -83,7 +83,7 @@ public class GameManager : MonoBehaviour
     void randomWheelAnswer(int id)
     {
         int steps = 1;
-        wheelPuzzleAnswer[id, 0] = Random.Range(0, 28);
+        wheelPuzzleAnswer[id, 0] = Random.Range(3, 28);
 
         for (int i = wheelPuzzleAnswer[id, 0]; i > 0; i--)
         {
