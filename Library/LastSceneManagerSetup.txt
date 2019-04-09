@@ -1,1 +1,4 @@
-sceneSetups: []
+sceneSetups:
+- path: Assets/Levels(rooms etc)/LivingRoom.unity
+  isLoaded: 1
+  isActive: 1
