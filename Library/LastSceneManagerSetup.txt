@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/TestScene/Scenes/SampleScene2.unity
+- path: Assets/Levels(rooms etc)/FF_Corridor.unity
   isLoaded: 1
   isActive: 1
