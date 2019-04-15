@@ -6,7 +6,8 @@ using UnityEngine.UI;
 
 public class Door : MonoBehaviour
 {
-    public int levelIndex;
+    //public int levelIndex;
+    public string sceneName;
     GameObject player;
     public int puzzlesBeforeUnlock;
     public string lockedMessage = "It's Locked.";
@@ -33,7 +34,8 @@ public class Door : MonoBehaviour
         {
             print("CHANGE");
             // GameManager.Instance.prevRoomLocation = player.transform.position;
-            GameManager.Instance.ChangeScene(levelIndex, player.transform.position);
+            //GameManager.Instance.ChangeScene(levelIndex, player.transform.position);
+            GameManager.Instance.ChangeScene(sceneName, player.transform.position);
         }
         else
             GenericPrompt.Instance.ShowPrompt(lockedMessage);

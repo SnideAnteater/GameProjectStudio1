@@ -6,9 +6,9 @@ using UnityEngine.UI;
 
 public class DoorForPuzzle : MonoBehaviour
 {
-    public int levelIndex;
+    public string levelName;
     GameObject player;
-    public enum puzzleType : int { ColorCombo = 0, WheelCombo };
+    public enum puzzleType : int { ColorCombo = 0, WheelCombo, Clock };
     public puzzleType typeOfPuzzle;
 
     private void Start()
@@ -25,6 +25,9 @@ public class DoorForPuzzle : MonoBehaviour
                     break;
                 case puzzleType.WheelCombo:
                     GameManager.Instance.givePuzzleId("Wheel");//get id
+                    break;
+                case puzzleType.Clock:
+                    GameManager.Instance.givePuzzleId("Clock");
                     break;
             }
 
@@ -48,7 +51,7 @@ public class DoorForPuzzle : MonoBehaviour
     {
         print("CHANGE");
         // GameManager.Instance.prevRoomLocation = player.transform.position;
-        GameManager.Instance.ChangeSceneForPuzzle(levelIndex, player.transform.position);
+        GameManager.Instance.ChangeSceneForPuzzle(levelName, player.transform.position);
     }
 
 
