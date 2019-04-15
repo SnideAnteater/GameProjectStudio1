@@ -9,9 +9,11 @@ public class GameManager : MonoBehaviour
     public enum colors : int { Red = 0, Yellow, Blue, Orange, Violet, Green, White };
     public static GameManager Instance { get; private set; }
     public float oil = 100;
-    public int GAME_OVER_INDEX = 0;
-    public int CORRIDOR_ID = 2;
-    public int CORRIDORFLOOR2_ID = 8;
+    public string GAME_OVER_INDEX;
+   // public int CORRIDOR_ID = 2;
+    //public int CORRIDORFLOOR2_ID = 8;
+    public string CORRIDOR_ID;
+    public string CORRIDORFLOOR2_ID;
     // public const int NUMBEROFPUZZLES = 8;
     public const int NUMBEROFWHEELPUZZLE = 4;
     public const int NUMBEROFCOLORPUZZLE = 4;
@@ -22,8 +24,10 @@ public class GameManager : MonoBehaviour
     public colors[] colorPuzzleAnswer = new colors[NUMBEROFCOLORPUZZLE];
 
     public int currentRoomID = 0;
+    public string currentRoomName;
     private int lastAssignedColourID;
     private int lastAssignedWheelID;
+    private int lastAssignedClockID;
     public Room[] roomData = new Room[NUMBEROFROOMS];
 
     public Vector3 prevRoomLocation;
@@ -33,12 +37,18 @@ public class GameManager : MonoBehaviour
     public delegate void SceneChanged();
     public static event SceneChanged Changed;
 
+   /* public string fixAnsNumber1 = "FF_StudyRoom";
+    public string fixAnsNumber2 = "GF_Tearoom";
+    public int fixAnsNum1 = 13;
+    public int fixAnsNum2 = */
+
     public struct Room
     {
         public bool puzzleAssigned;
         public string puzzleType;
         public int puzzleId;
         public bool puzzleSolved;
+        
     };
 
 
@@ -72,7 +82,9 @@ public class GameManager : MonoBehaviour
         }
         lastAssignedColourID = 0;
         lastAssignedWheelID = 0;
+        lastAssignedClockID = 0;
         currentRoomID = SceneManager.GetActiveScene().buildIndex;
+        currentRoomName = SceneManager.GetActiveScene().name;
     }
 
     public void loseOil(int amount)
@@ -80,7 +92,7 @@ public class GameManager : MonoBehaviour
         oil = oil - amount;
     }
 
-    void randomWheelAnswer(int id)
+    void randomWheelAnswer(int id)//distributes the generated number for answer onto the wheels randomly (possible modular candidate too)
     {
         int steps = 1;
         wheelPuzzleAnswer[id, 0] = Random.Range(3, 28);
@@ -136,25 +148,40 @@ public class GameManager : MonoBehaviour
             roomData[currentRoomID].puzzleId = lastAssignedColourID - 1;
             // return lastAssignedColourID - 1;
         }
+        else if (type == "Clock")
+        {
+            lastAssignedClockID++;
+            roomData[currentRoomID].puzzleAssigned = true;
+            roomData[currentRoomID].puzzleType = "Clock";
+            roomData[currentRoomID].puzzleId = lastAssignedClockID - 1;
+            // return lastAssignedColourID - 1;
+        }
 
         //   else
         //  return -1;//default 
     }
 
-    public void ChangeScene(int levelIndex, Vector3 playerLocation)
+   // public void ChangeScene(int levelIndex, Vector3 playerLocation)
+    public void ChangeScene(string levelIndex, Vector3 playerLocation)
     {
 
-        if (currentRoomID == CORRIDOR_ID || currentRoomID == CORRIDORFLOOR2_ID)//going away from corridor
+        if (currentRoomName == CORRIDOR_ID || currentRoomName == CORRIDORFLOOR2_ID)//going away from corridor
         {
             prevCorridorLocation = playerLocation;
         }
-        currentRoomID = levelIndex;
+        currentRoomName = levelIndex;
+        
         Changed();
         SceneManager.LoadScene(levelIndex);
+        currentRoomID = SceneManager.GetActiveScene().buildIndex;
 
     }
-    public void ChangeSceneForPuzzle(int levelIndex, Vector3 playerLocation)
+    public void ChangeSceneForPuzzle(string levelIndex, Vector3 playerLocation)
     {
+       /* if(SceneManager.GetActiveScene().name == fixAnsNumber1 || SceneManager.GetActiveScene().name == fixAnsNumber2)
+        {
+
+        }*/
         if (!roomData[currentRoomID].puzzleSolved)//dosen't enter solved puzzles
         {
             inPuzzle = true;
@@ -162,6 +189,15 @@ public class GameManager : MonoBehaviour
             Changed();
             SceneManager.LoadScene(levelIndex);
         }
+    }
+    public void ChangeSceneForInspect(string levelIndex, Vector3 playerLocation)
+    {
+       
+            inPuzzle = true;
+            prevRoomLocation = playerLocation;
+            Changed();
+            SceneManager.LoadScene(levelIndex);
+
     }
 
     public void GameOver()
@@ -171,13 +207,13 @@ public class GameManager : MonoBehaviour
     }
     public void ReturnFromPuzzle()
     {
-        SceneManager.LoadScene(currentRoomID);
+        SceneManager.LoadScene(currentRoomName);
 
     }
 
     public void RepositionPlayer()
     {
-        if (currentRoomID == CORRIDOR_ID || currentRoomID == CORRIDORFLOOR2_ID) // going to the corridor
+        if (currentRoomName == CORRIDOR_ID || currentRoomName == CORRIDORFLOOR2_ID) // going to the corridor
         {
             if (prevCorridorLocation != new Vector3(0, 0, 0))
                 player.transform.position = prevCorridorLocation;
