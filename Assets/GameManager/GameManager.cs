@@ -37,6 +37,11 @@ public class GameManager : MonoBehaviour
     public delegate void SceneChanged();
     public static event SceneChanged Changed;
 
+   /* public string fixAnsNumber1 = "FF_StudyRoom";
+    public string fixAnsNumber2 = "GF_Tearoom";
+    public int fixAnsNum1 = 13;
+    public int fixAnsNum2 = */
+
     public struct Room
     {
         public bool puzzleAssigned;
@@ -87,7 +92,7 @@ public class GameManager : MonoBehaviour
         oil = oil - amount;
     }
 
-    void randomWheelAnswer(int id)
+    void randomWheelAnswer(int id)//distributes the generated number for answer onto the wheels randomly (possible modular candidate too)
     {
         int steps = 1;
         wheelPuzzleAnswer[id, 0] = Random.Range(3, 28);
@@ -173,6 +178,10 @@ public class GameManager : MonoBehaviour
     }
     public void ChangeSceneForPuzzle(string levelIndex, Vector3 playerLocation)
     {
+       /* if(SceneManager.GetActiveScene().name == fixAnsNumber1 || SceneManager.GetActiveScene().name == fixAnsNumber2)
+        {
+
+        }*/
         if (!roomData[currentRoomID].puzzleSolved)//dosen't enter solved puzzles
         {
             inPuzzle = true;

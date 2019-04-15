@@ -30,7 +30,7 @@ public class DoorForInspect : MonoBehaviour
     {
         print("CHANGE");
         // GameManager.Instance.prevRoomLocation = player.transform.position;
-        GameManager.Instance.ChangeSceneInspect(levelName, player.transform.position);
+        GameManager.Instance.ChangeSceneForInspect(levelName, player.transform.position);
     }
 
 
