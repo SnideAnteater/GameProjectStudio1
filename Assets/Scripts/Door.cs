@@ -33,13 +33,10 @@ public class Door : MonoBehaviour
         if (GameManager.Instance.PuzzleSolvedCount() >= puzzlesBeforeUnlock)
         {
             print("CHANGE");
-            // GameManager.Instance.prevRoomLocation = player.transform.position;
-            //GameManager.Instance.ChangeScene(levelIndex, player.transform.position);
             GameManager.Instance.ChangeScene(sceneName, player.transform.position);
         }
         else
             GenericPrompt.Instance.ShowPrompt(lockedMessage);
-        
     }
 
 
