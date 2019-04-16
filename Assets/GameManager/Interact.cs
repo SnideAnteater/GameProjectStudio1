@@ -22,6 +22,7 @@ public class Interact : MonoBehaviour
                 RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
                 if (hit.collider != null)
                 {
+                    if(hit.transform.gameObject.layer != 8)
                     hit.collider.SendMessage("Interact", SendMessageOptions.RequireReceiver);
                 }
             }
