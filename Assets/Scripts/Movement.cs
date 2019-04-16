@@ -9,6 +9,7 @@ public class Movement : MonoBehaviour
     public float playerSpeed = 4f;
     Vector3 lastClick;
     float playerY;
+    float playerZ;
     float newPlayerX;
     float oldPlayerX;
     public bool isMove;
@@ -20,6 +21,7 @@ public class Movement : MonoBehaviour
     {
         cam = Camera.main;
         playerY = transform.position.y;
+        playerZ = transform.position.z;
         newPlayerX = transform.position.x;
         oldPlayerX = transform.position.x;
         lastClick = transform.position;
@@ -34,7 +36,7 @@ public class Movement : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             lastClick = cam.ScreenToWorldPoint(Input.mousePosition);
-            lastClick = new Vector3(lastClick.x, playerY, 0f);
+            lastClick = new Vector3(lastClick.x, playerY, playerZ);
             newPlayerX = lastClick.x;
             if(newPlayerX > oldPlayerX)
             {
