@@ -6,28 +6,38 @@ public class playerAnim : MonoBehaviour {
 
     // call animator
     public Animator anim;
-    MovePlayerButtons playerMove;
-    public GameObject button;
+    private Movement movement;
     //Check the bool which item is equiped
     public bool NoItem = true;
     public bool HasItem = false;
     public bool FullSet = false;
 
+
     private void Start()
     {
-        playerMove = button.GetComponent<MovePlayerButtons>();
+        movement = GameObject.FindGameObjectWithTag("Player").GetComponent<Movement>();
     }
 
     private void Update()
     {
         Movement();
+        if(Input.GetKeyDown(KeyCode.K))
+        {
+            NoItem = false;
+            HasItem = true;
+        }
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            HasItem = false;
+            FullSet = true;
+        }
     }
 
     void Movement()
     {
         if(NoItem == true)
         {
-            if(playerMove.moveLeft == true || playerMove.moveRight == true)
+            if(movement.isMove == true || movement.NotMove == false)
             {
                 anim.SetBool("isWalkNoItem", true);
                 anim.SetBool("isIdleNoItem", false);
@@ -40,7 +50,7 @@ public class playerAnim : MonoBehaviour {
         }
         else if(HasItem == true)
         {
-            if (playerMove.moveLeft == true || playerMove.moveRight == true)
+            if (movement.isMove == true || movement.NotMove == false)
             {
                 anim.SetBool("isWalkLamp", true);
                 anim.SetBool("isIdleLamp", false);
@@ -53,7 +63,7 @@ public class playerAnim : MonoBehaviour {
         }
         else if(FullSet == true)
         {
-            if (playerMove.moveLeft == true || playerMove.moveRight == true)
+            if (movement.isMove == true || movement.NotMove == false)
             {
                 anim.SetBool("isWalkFull", true);
                 anim.SetBool("isIdleFull", false);
