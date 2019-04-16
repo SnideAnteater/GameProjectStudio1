@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Inventory_Update : MonoBehaviour
 {
-    public bool[] isFull;
+    //public bool[] isFull;
+    public int[] items;
     public GameObject[] slots;
 }
