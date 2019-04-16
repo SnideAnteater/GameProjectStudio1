@@ -34,8 +34,8 @@ public class GameManager : MonoBehaviour
     public Vector3 prevCorridorLocation;
     public bool inPuzzle = false;
 
-    public delegate void SceneChanged();
-    public static event SceneChanged Changed;
+   // public delegate void SceneChanged();
+   // public static event SceneChanged Changed;
 
    /* public string fixAnsNumber1 = "FF_StudyRoom";
     public string fixAnsNumber2 = "GF_Tearoom";
@@ -171,7 +171,7 @@ public class GameManager : MonoBehaviour
         }
         currentRoomName = levelIndex;
         
-        Changed();
+        //Changed();
         SceneManager.LoadScene(levelIndex);
         currentRoomID = SceneManager.GetActiveScene().buildIndex;
 
@@ -186,7 +186,7 @@ public class GameManager : MonoBehaviour
         {
             inPuzzle = true;
             prevRoomLocation = playerLocation;
-            Changed();
+           // Changed();
             SceneManager.LoadScene(levelIndex);
         }
     }
@@ -195,14 +195,14 @@ public class GameManager : MonoBehaviour
        
             inPuzzle = true;
             prevRoomLocation = playerLocation;
-            Changed();
+            //Changed();
             SceneManager.LoadScene(levelIndex);
 
     }
 
     public void GameOver()
     {
-        Changed();
+       // Changed();
         SceneManager.LoadScene(GAME_OVER_INDEX);
     }
     public void ReturnFromPuzzle()
