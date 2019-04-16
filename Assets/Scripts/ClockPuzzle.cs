@@ -11,7 +11,7 @@ public class ClockPuzzle : MonoBehaviour
     public GameObject hourHand;
     private GameObject activeHand;
     bool clicked = false;
-    Vector2 lastClick;
+    //Vector2 lastClick;
     bool minHandActive = true;
     public float rotationSensitivity = 10f;
     public Collider2D answer;
@@ -19,6 +19,7 @@ public class ClockPuzzle : MonoBehaviour
     Collider2D hourHandCol;
     public Text buttonText;
     public Text win;
+    public bool gearSolved = false;
 
     public bool minPosition = false;
     public bool hourPosition = false;
@@ -55,7 +56,7 @@ public class ClockPuzzle : MonoBehaviour
           //  clicked = false;
         }*/
 
-        if(clicked)
+        if(clicked && gearSolved)
         {
             activeHand.transform.Rotate(0, 0, -rotationSensitivity);
         }
@@ -96,6 +97,11 @@ public class ClockPuzzle : MonoBehaviour
     {
         
         win.text = "WIN";
+    }
+
+    public void Interact()
+    {
+        //black to prevent nulls
     }
 
 }

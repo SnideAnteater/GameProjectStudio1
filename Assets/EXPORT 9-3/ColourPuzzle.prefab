@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -146,8 +146,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 95ef83675d16eb04b8f9c18a7d09e48f, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -279,7 +279,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6d9ece45827cfa24a9b0c4ae643724a1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 053727230f6514649b685e88f287004c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -320,7 +320,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.39, y: 2}
+    oldSize: {x: 1.7714286, y: 1.7714286}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -328,47 +328,20 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.635, y: -0.35}
-      - {x: 0.645, y: -0.32}
-      - {x: 0.645, y: -0.13}
-      - {x: 0.635, y: -0.049999997}
-      - {x: 0.625, y: 0.16}
-      - {x: 0.645, y: 0.22999999}
-      - {x: 0.645, y: 0.29999998}
-      - {x: 0.635, y: 0.31}
-      - {x: 0.60499996, y: 0.37}
-      - {x: 0.545, y: 0.42}
-      - {x: 0.515, y: 0.62}
-      - {x: 0.42499998, y: 0.76}
-      - {x: 0.325, y: 0.87}
-      - {x: 0.185, y: 0.94}
-      - {x: 0.044999998, y: 0.96}
-      - {x: -0.175, y: 0.96}
-      - {x: -0.275, y: 0.94}
-      - {x: -0.505, y: 0.77}
-      - {x: -0.575, y: 0.57}
-      - {x: -0.625, y: 0.38}
-      - {x: -0.625, y: 0.37}
-      - {x: -0.59499997, y: 0.14}
-      - {x: -0.585, y: 0.06}
-      - {x: -0.625, y: -0.19}
-      - {x: -0.625, y: -0.41}
-      - {x: -0.585, y: -0.56}
-      - {x: -0.465, y: -0.74}
-      - {x: -0.225, y: -0.90999997}
-      - {x: -0.055, y: -0.96}
-      - {x: 0.195, y: -0.96}
-      - {x: 0.435, y: -0.81}
-      - {x: 0.505, y: -0.71}
-      - {x: 0.625, y: -0.5}
-    - - {x: -0.074999996, y: 0.39999998}
-      - {x: -0.175, y: 0.5}
-      - {x: -0.235, y: 0.53999996}
-      - {x: -0.145, y: 0.66999996}
-      - {x: 0.114999995, y: 0.69}
-      - {x: 0.205, y: 0.57}
-      - {x: 0.21499999, y: 0.45}
-      - {x: 0.114999995, y: 0.35999998}
+    - - {x: 0.6, y: 0.44285715}
+      - {x: 0.5714286, y: 0.6}
+      - {x: 0.27142859, y: 0.8142857}
+      - {x: -0.25714287, y: 0.8142857}
+      - {x: -0.55714285, y: 0.6142857}
+      - {x: -0.55714285, y: -0.5857143}
+      - {x: -0.37142858, y: -0.82857144}
+      - {x: 0.27142859, y: -0.82857144}
+      - {x: 0.5857143, y: -0.6571429}
+      - {x: 0.6, y: -0.41428572}
+    - - {x: -0.17142858, y: 0.32857144}
+      - {x: 0.071428575, y: 0.51428574}
+      - {x: 0.22857143, y: 0.42857143}
+      - {x: 0.2, y: 0.31428573}
 --- !u!114 &5641113312112702797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -601,7 +574,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6d9ece45827cfa24a9b0c4ae643724a1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 053727230f6514649b685e88f287004c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -658,7 +631,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.39, y: 2}
+    oldSize: {x: 1.7714286, y: 1.7714286}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -666,47 +639,20 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.635, y: -0.35}
-      - {x: 0.645, y: -0.32}
-      - {x: 0.645, y: -0.13}
-      - {x: 0.635, y: -0.049999997}
-      - {x: 0.625, y: 0.16}
-      - {x: 0.645, y: 0.22999999}
-      - {x: 0.645, y: 0.29999998}
-      - {x: 0.635, y: 0.31}
-      - {x: 0.60499996, y: 0.37}
-      - {x: 0.545, y: 0.42}
-      - {x: 0.515, y: 0.62}
-      - {x: 0.42499998, y: 0.76}
-      - {x: 0.325, y: 0.87}
-      - {x: 0.185, y: 0.94}
-      - {x: 0.044999998, y: 0.96}
-      - {x: -0.175, y: 0.96}
-      - {x: -0.275, y: 0.94}
-      - {x: -0.505, y: 0.77}
-      - {x: -0.575, y: 0.57}
-      - {x: -0.625, y: 0.38}
-      - {x: -0.625, y: 0.37}
-      - {x: -0.59499997, y: 0.14}
-      - {x: -0.585, y: 0.06}
-      - {x: -0.625, y: -0.19}
-      - {x: -0.625, y: -0.41}
-      - {x: -0.585, y: -0.56}
-      - {x: -0.465, y: -0.74}
-      - {x: -0.225, y: -0.90999997}
-      - {x: -0.055, y: -0.96}
-      - {x: 0.195, y: -0.96}
-      - {x: 0.435, y: -0.81}
-      - {x: 0.505, y: -0.71}
-      - {x: 0.625, y: -0.5}
-    - - {x: -0.074999996, y: 0.39999998}
-      - {x: -0.175, y: 0.5}
-      - {x: -0.235, y: 0.53999996}
-      - {x: -0.145, y: 0.66999996}
-      - {x: 0.114999995, y: 0.69}
-      - {x: 0.205, y: 0.57}
-      - {x: 0.21499999, y: 0.45}
-      - {x: 0.114999995, y: 0.35999998}
+    - - {x: 0.6, y: 0.44285715}
+      - {x: 0.5714286, y: 0.6}
+      - {x: 0.27142859, y: 0.8142857}
+      - {x: -0.25714287, y: 0.8142857}
+      - {x: -0.55714285, y: 0.6142857}
+      - {x: -0.55714285, y: -0.5857143}
+      - {x: -0.37142858, y: -0.82857144}
+      - {x: 0.27142859, y: -0.82857144}
+      - {x: 0.5857143, y: -0.6571429}
+      - {x: 0.6, y: -0.41428572}
+    - - {x: -0.17142858, y: 0.32857144}
+      - {x: 0.071428575, y: 0.51428574}
+      - {x: 0.22857143, y: 0.42857143}
+      - {x: 0.2, y: 0.31428573}
 --- !u!1 &1748347803108001728
 GameObject:
   m_ObjectHideFlags: 0
@@ -880,7 +826,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6d9ece45827cfa24a9b0c4ae643724a1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 053727230f6514649b685e88f287004c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -921,7 +867,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.39, y: 2}
+    oldSize: {x: 1.7714286, y: 1.7714286}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -929,47 +875,20 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.635, y: -0.35}
-      - {x: 0.645, y: -0.32}
-      - {x: 0.645, y: -0.13}
-      - {x: 0.635, y: -0.049999997}
-      - {x: 0.625, y: 0.16}
-      - {x: 0.645, y: 0.22999999}
-      - {x: 0.645, y: 0.29999998}
-      - {x: 0.635, y: 0.31}
-      - {x: 0.60499996, y: 0.37}
-      - {x: 0.545, y: 0.42}
-      - {x: 0.515, y: 0.62}
-      - {x: 0.42499998, y: 0.76}
-      - {x: 0.325, y: 0.87}
-      - {x: 0.185, y: 0.94}
-      - {x: 0.044999998, y: 0.96}
-      - {x: -0.175, y: 0.96}
-      - {x: -0.275, y: 0.94}
-      - {x: -0.505, y: 0.77}
-      - {x: -0.575, y: 0.57}
-      - {x: -0.625, y: 0.38}
-      - {x: -0.625, y: 0.37}
-      - {x: -0.59499997, y: 0.14}
-      - {x: -0.585, y: 0.06}
-      - {x: -0.625, y: -0.19}
-      - {x: -0.625, y: -0.41}
-      - {x: -0.585, y: -0.56}
-      - {x: -0.465, y: -0.74}
-      - {x: -0.225, y: -0.90999997}
-      - {x: -0.055, y: -0.96}
-      - {x: 0.195, y: -0.96}
-      - {x: 0.435, y: -0.81}
-      - {x: 0.505, y: -0.71}
-      - {x: 0.625, y: -0.5}
-    - - {x: -0.074999996, y: 0.39999998}
-      - {x: -0.175, y: 0.5}
-      - {x: -0.235, y: 0.53999996}
-      - {x: -0.145, y: 0.66999996}
-      - {x: 0.114999995, y: 0.69}
-      - {x: 0.205, y: 0.57}
-      - {x: 0.21499999, y: 0.45}
-      - {x: 0.114999995, y: 0.35999998}
+    - - {x: 0.6, y: 0.44285715}
+      - {x: 0.5714286, y: 0.6}
+      - {x: 0.27142859, y: 0.8142857}
+      - {x: -0.25714287, y: 0.8142857}
+      - {x: -0.55714285, y: 0.6142857}
+      - {x: -0.55714285, y: -0.5857143}
+      - {x: -0.37142858, y: -0.82857144}
+      - {x: 0.27142859, y: -0.82857144}
+      - {x: 0.5857143, y: -0.6571429}
+      - {x: 0.6, y: -0.41428572}
+    - - {x: -0.17142858, y: 0.32857144}
+      - {x: 0.071428575, y: 0.51428574}
+      - {x: 0.22857143, y: 0.42857143}
+      - {x: 0.2, y: 0.31428573}
 --- !u!114 &505822928877659988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1058,7 +977,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6d9ece45827cfa24a9b0c4ae643724a1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 053727230f6514649b685e88f287004c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1086,7 +1005,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.39, y: 2}
+    oldSize: {x: 1.7714286, y: 1.7714286}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1141,7 +1060,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.39, y: 2}
+    oldSize: {x: 1.7714286, y: 1.7714286}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1149,47 +1068,20 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.635, y: -0.35}
-      - {x: 0.645, y: -0.32}
-      - {x: 0.645, y: -0.13}
-      - {x: 0.635, y: -0.049999997}
-      - {x: 0.625, y: 0.16}
-      - {x: 0.645, y: 0.22999999}
-      - {x: 0.645, y: 0.29999998}
-      - {x: 0.635, y: 0.31}
-      - {x: 0.60499996, y: 0.37}
-      - {x: 0.545, y: 0.42}
-      - {x: 0.515, y: 0.62}
-      - {x: 0.42499998, y: 0.76}
-      - {x: 0.325, y: 0.87}
-      - {x: 0.185, y: 0.94}
-      - {x: 0.044999998, y: 0.96}
-      - {x: -0.175, y: 0.96}
-      - {x: -0.275, y: 0.94}
-      - {x: -0.505, y: 0.77}
-      - {x: -0.575, y: 0.57}
-      - {x: -0.625, y: 0.38}
-      - {x: -0.625, y: 0.37}
-      - {x: -0.59499997, y: 0.14}
-      - {x: -0.585, y: 0.06}
-      - {x: -0.625, y: -0.19}
-      - {x: -0.625, y: -0.41}
-      - {x: -0.585, y: -0.56}
-      - {x: -0.465, y: -0.74}
-      - {x: -0.225, y: -0.90999997}
-      - {x: -0.055, y: -0.96}
-      - {x: 0.195, y: -0.96}
-      - {x: 0.435, y: -0.81}
-      - {x: 0.505, y: -0.71}
-      - {x: 0.625, y: -0.5}
-    - - {x: -0.074999996, y: 0.39999998}
-      - {x: -0.175, y: 0.5}
-      - {x: -0.235, y: 0.53999996}
-      - {x: -0.145, y: 0.66999996}
-      - {x: 0.114999995, y: 0.69}
-      - {x: 0.205, y: 0.57}
-      - {x: 0.21499999, y: 0.45}
-      - {x: 0.114999995, y: 0.35999998}
+    - - {x: 0.6, y: 0.44285715}
+      - {x: 0.5714286, y: 0.6}
+      - {x: 0.27142859, y: 0.8142857}
+      - {x: -0.25714287, y: 0.8142857}
+      - {x: -0.55714285, y: 0.6142857}
+      - {x: -0.55714285, y: -0.5857143}
+      - {x: -0.37142858, y: -0.82857144}
+      - {x: 0.27142859, y: -0.82857144}
+      - {x: 0.5857143, y: -0.6571429}
+      - {x: 0.6, y: -0.41428572}
+    - - {x: -0.17142858, y: 0.32857144}
+      - {x: 0.071428575, y: 0.51428574}
+      - {x: 0.22857143, y: 0.42857143}
+      - {x: 0.2, y: 0.31428573}
 --- !u!1 &1748347803504967560
 GameObject:
   m_ObjectHideFlags: 0
@@ -1303,7 +1195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1415,7 +1307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1503,8 +1395,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 95ef83675d16eb04b8f9c18a7d09e48f, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1632,8 +1524,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 95ef83675d16eb04b8f9c18a7d09e48f, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

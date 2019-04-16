@@ -8,6 +8,7 @@ public class Gear2 : MonoBehaviour
     public Transform gearAnswer;
     public GameObject AnswerGear;
     public float positionX, positionY;
+    public ClockPuzzle clock;
 
     private Vector2 initialPosition;
     private Vector2 mousePosition;
@@ -45,6 +46,8 @@ public class Gear2 : MonoBehaviour
         {
             Destroy(this.gameObject);
             AnswerGear.SetActive(true);
+            clock.gearSolved = true;//to enable clock
+
         }
         else
         {
