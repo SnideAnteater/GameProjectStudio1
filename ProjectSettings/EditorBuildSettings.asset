@@ -9,9 +9,24 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/TestScene/Scenes/SampleScene.unity
-    guid: 1abe97c1979b9684c85e7a53368eb582
+    path: Assets/Levels(rooms etc)/VS_Garden.unity
+    guid: 6ddb19bcef1eac94785d55316b027327
   - enabled: 1
-    path: Assets/TestScene/Scenes/SampleScene2.unity
-    guid: ea658ca5653fd7b4093f16ff3ac5a8a7
+    path: Assets/Levels(rooms etc)/GF_Corridor.unity
+    guid: 98d2a295681f94c4783093dc05a744c2
+  - enabled: 1
+    path: Assets/Levels(rooms etc)/GF_Kitchen.unity
+    guid: 9e5cf8251ec2a0f4b837400021e788b5
+  - enabled: 1
+    path: Assets/Levels(rooms etc)/GF_Library.unity
+    guid: a9e5e4873f47f6647bd03e1da5c5feae
+  - enabled: 1
+    path: Assets/Levels(rooms etc)/GF_LivingRoom.unity
+    guid: a7bbec82ed9bc174092749a5d591fb22
+  - enabled: 1
+    path: Assets/Levels(rooms etc)/GF_Tearoom.unity
+    guid: fd3b742910d2ccc4b9ece12bd86eba46
+  - enabled: 1
+    path: Assets/Levels(rooms etc)/GF_Toilet.unity
+    guid: 7468335c9e2e7cb48a522788c64eb5f1
   m_configObjects: {}

@@ -280,6 +280,7 @@ GameObject:
   m_Component:
   - component: {fileID: 252029923}
   - component: {fileID: 252029924}
+  - component: {fileID: 252029925}
   m_Layer: 0
   m_Name: GF_corridor_door2
   m_TagString: Untagged
@@ -349,6 +350,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &252029925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252029922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d227bfaa73241940b91274bcd82f4f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: GF_Library
+  puzzlesBeforeUnlock: 0
+  lockedMessage: It's Locked.
 --- !u!1 &355979512
 GameObject:
   m_ObjectHideFlags: 0
@@ -754,6 +770,7 @@ GameObject:
   m_Component:
   - component: {fileID: 589574607}
   - component: {fileID: 589574608}
+  - component: {fileID: 589574609}
   m_Layer: 0
   m_Name: GF_corridor_door5
   m_TagString: Untagged
@@ -823,6 +840,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &589574609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589574606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d227bfaa73241940b91274bcd82f4f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: 
+  puzzlesBeforeUnlock: 0
+  lockedMessage: It's Locked.
 --- !u!1 &625301012
 GameObject:
   m_ObjectHideFlags: 0
@@ -1012,6 +1044,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1051507270}
   - component: {fileID: 1051507271}
+  - component: {fileID: 1051507272}
   m_Layer: 0
   m_Name: GF_corridor_door3
   m_TagString: Untagged
@@ -1081,6 +1114,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1051507272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051507269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d227bfaa73241940b91274bcd82f4f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: GF_Toilet
+  puzzlesBeforeUnlock: 0
+  lockedMessage: It's Locked.
 --- !u!1001 &1132208188
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1210,6 +1258,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1250489389}
   - component: {fileID: 1250489390}
+  - component: {fileID: 1250489391}
   m_Layer: 0
   m_Name: GF_corridor_door1
   m_TagString: Untagged
@@ -1279,6 +1328,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1250489391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1250489388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d227bfaa73241940b91274bcd82f4f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: GF_LivingRoom
+  puzzlesBeforeUnlock: 0
+  lockedMessage: It's Locked.
 --- !u!1001 &1331109626
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1474,6 +1538,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1525481969}
   - component: {fileID: 1525481970}
+  - component: {fileID: 1525481971}
   m_Layer: 0
   m_Name: GF_corridor_door6
   m_TagString: Untagged
@@ -1543,6 +1608,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1525481971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525481968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d227bfaa73241940b91274bcd82f4f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: GF_Tearoom
+  puzzlesBeforeUnlock: 0
+  lockedMessage: It's Locked.
 --- !u!1 &1631200853
 GameObject:
   m_ObjectHideFlags: 0
@@ -1553,6 +1633,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1631200854}
   - component: {fileID: 1631200855}
+  - component: {fileID: 1631200856}
   m_Layer: 0
   m_Name: GF_corridor_door4
   m_TagString: Untagged
@@ -1622,6 +1703,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1631200856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631200853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d227bfaa73241940b91274bcd82f4f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: GF_Kitchen
+  puzzlesBeforeUnlock: 0
+  lockedMessage: It's Locked.
 --- !u!1 &1715885303
 GameObject:
   m_ObjectHideFlags: 0
