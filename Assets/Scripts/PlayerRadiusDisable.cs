@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerRadiusDisable : MonoBehaviour
 {
      Collider2D col;
-    public float distance;
+    public float distance =4;
     // Start is called before the first frame update
     void Start()
     {

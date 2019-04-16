@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void OnEnable()
     {
-        GameManager.Instance.player = this.gameObject;
+        if(GameManager.Instance.player !=null) GameManager.Instance.player = this.gameObject;
         GameManager.Instance.RepositionPlayer();
     }
 
