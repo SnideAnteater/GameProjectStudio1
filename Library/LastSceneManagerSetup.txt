@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/MergeToMainFile/GAME OVER.unity
+- path: Assets/Levels(rooms etc)/TESTGARDEN.unity
   isLoaded: 1
   isActive: 1
