@@ -281,6 +281,7 @@ GameObject:
   - component: {fileID: 252029923}
   - component: {fileID: 252029924}
   - component: {fileID: 252029925}
+  - component: {fileID: 252029927}
   - component: {fileID: 252029926}
   m_Layer: 0
   m_Name: GF_corridor_door2
@@ -392,6 +393,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.21, y: 4.47}
   m_EdgeRadius: 0
+--- !u!114 &252029927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252029922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 674b0b841b6352f4e9dc2aff8cd562e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 2
 --- !u!1 &355979512
 GameObject:
   m_ObjectHideFlags: 0
@@ -963,6 +977,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 365686683, guid: e96fe232e1b01d24f898f038ddedc698, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2036565383928778023, guid: e96fe232e1b01d24f898f038ddedc698,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e96fe232e1b01d24f898f038ddedc698, type: 3}
 --- !u!1001 &1010025014
@@ -1045,6 +1068,7 @@ GameObject:
   - component: {fileID: 1051507270}
   - component: {fileID: 1051507271}
   - component: {fileID: 1051507272}
+  - component: {fileID: 1051507274}
   - component: {fileID: 1051507273}
   m_Layer: 0
   m_Name: GF_corridor_door3
@@ -1156,6 +1180,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.19, y: 4.41}
   m_EdgeRadius: 0
+--- !u!114 &1051507274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051507269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 674b0b841b6352f4e9dc2aff8cd562e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 2
 --- !u!1001 &1132208188
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1273,6 +1310,21 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4260483108775648705, guid: bb5985375d2e96c408b2118a0e39d754,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4260483107165481716, guid: bb5985375d2e96c408b2118a0e39d754,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4260483108238457298, guid: bb5985375d2e96c408b2118a0e39d754,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb5985375d2e96c408b2118a0e39d754, type: 3}
 --- !u!1 &1250489388
@@ -1286,6 +1338,7 @@ GameObject:
   - component: {fileID: 1250489389}
   - component: {fileID: 1250489390}
   - component: {fileID: 1250489391}
+  - component: {fileID: 1250489393}
   - component: {fileID: 1250489392}
   m_Layer: 0
   m_Name: GF_corridor_door1
@@ -1397,6 +1450,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.27, y: 4.45}
   m_EdgeRadius: 0
+--- !u!114 &1250489393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1250489388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 674b0b841b6352f4e9dc2aff8cd562e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 2
 --- !u!1001 &1331109626
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1463,6 +1529,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637656912928706990, guid: 68cd98061a2c6584db6dd12a60bfe745,
+        type: 3}
+      propertyPath: rightBound
+      value: 68.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637656912928706990, guid: 68cd98061a2c6584db6dd12a60bfe745,
+        type: 3}
+      propertyPath: leftBound
+      value: -7.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2556868621789563334, guid: 68cd98061a2c6584db6dd12a60bfe745,
+        type: 3}
+      propertyPath: FullSet
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68cd98061a2c6584db6dd12a60bfe745, type: 3}
@@ -1593,6 +1674,7 @@ GameObject:
   - component: {fileID: 1525481969}
   - component: {fileID: 1525481970}
   - component: {fileID: 1525481971}
+  - component: {fileID: 1525481973}
   - component: {fileID: 1525481972}
   m_Layer: 0
   m_Name: GF_corridor_door6
@@ -1704,6 +1786,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.18, y: 4.41}
   m_EdgeRadius: 0
+--- !u!114 &1525481973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525481968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 674b0b841b6352f4e9dc2aff8cd562e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 2
 --- !u!1 &1631200853
 GameObject:
   m_ObjectHideFlags: 0
@@ -1715,6 +1810,7 @@ GameObject:
   - component: {fileID: 1631200854}
   - component: {fileID: 1631200855}
   - component: {fileID: 1631200856}
+  - component: {fileID: 1631200858}
   - component: {fileID: 1631200857}
   m_Layer: 0
   m_Name: GF_corridor_door4
@@ -1826,6 +1922,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.17, y: 4.42}
   m_EdgeRadius: 0
+--- !u!114 &1631200858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631200853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 674b0b841b6352f4e9dc2aff8cd562e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 2
 --- !u!1 &1715885303
 GameObject:
   m_ObjectHideFlags: 0
@@ -2165,6 +2274,36 @@ BoxCollider2D:
     type: 3}
   m_PrefabInstance: {fileID: 2023161141}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2095623517
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2095623518}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2095623518
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2095623517}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.8, y: -1.3644844, z: 7.9019413}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2101982454
 GameObject:
   m_ObjectHideFlags: 0

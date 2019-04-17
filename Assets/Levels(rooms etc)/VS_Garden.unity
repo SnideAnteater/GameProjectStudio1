@@ -362,6 +362,7 @@ GameObject:
   - component: {fileID: 242770780}
   - component: {fileID: 242770781}
   - component: {fileID: 242770782}
+  - component: {fileID: 242770784}
   - component: {fileID: 242770783}
   m_Layer: 0
   m_Name: GF_garden_bag
@@ -472,6 +473,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.98, y: 0.51}
   m_EdgeRadius: 0
+--- !u!114 &242770784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242770779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 674b0b841b6352f4e9dc2aff8cd562e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 4
 --- !u!1 &519571510 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4260483107912042326, guid: bb5985375d2e96c408b2118a0e39d754,
@@ -572,6 +586,11 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8208236990192193875, guid: e96fe232e1b01d24f898f038ddedc698,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2036565383928778023, guid: e96fe232e1b01d24f898f038ddedc698,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
@@ -757,6 +776,7 @@ GameObject:
   - component: {fileID: 886469056}
   - component: {fileID: 886469059}
   - component: {fileID: 886469058}
+  - component: {fileID: 886469060}
   - component: {fileID: 886469057}
   m_Layer: 0
   m_Name: GF_garden_statuewithlantern
@@ -867,6 +887,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &886469060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886469055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 674b0b841b6352f4e9dc2aff8cd562e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 4
 --- !u!61 &1062609790 stripped
 BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 8507686321874700645, guid: 53cb2cf17f8b0244fb95cfbcfab4c2eb,
@@ -1861,7 +1894,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1661064835
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1940,7 +1973,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1665130090
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2342,6 +2375,7 @@ GameObject:
   - component: {fileID: 1906522633}
   - component: {fileID: 1906522635}
   - component: {fileID: 1906522634}
+  - component: {fileID: 1906522637}
   - component: {fileID: 1906522636}
   m_Layer: 0
   m_Name: GF_garden_door
@@ -2453,6 +2487,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.5863521, y: 4.8627243}
   m_EdgeRadius: 0
+--- !u!114 &1906522637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906522632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 674b0b841b6352f4e9dc2aff8cd562e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 4
 --- !u!1 &1909753268
 GameObject:
   m_ObjectHideFlags: 0
@@ -2660,6 +2707,16 @@ PrefabInstance:
         type: 3}
       propertyPath: rightBound
       value: 18.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2556868621789563334, guid: 68cd98061a2c6584db6dd12a60bfe745,
+        type: 3}
+      propertyPath: FullSet
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2556868621789563334, guid: 68cd98061a2c6584db6dd12a60bfe745,
+        type: 3}
+      propertyPath: NoItem
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68cd98061a2c6584db6dd12a60bfe745, type: 3}

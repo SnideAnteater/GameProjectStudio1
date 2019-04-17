@@ -158,9 +158,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 5309720090729301347}
-  NoItem: 1
+  NoItem: 0
   HasItem: 0
-  FullSet: 0
+  FullSet: 1
 --- !u!114 &2949102752984884036
 MonoBehaviour:
   m_ObjectHideFlags: 0
