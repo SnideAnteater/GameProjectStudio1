@@ -29,4 +29,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels(rooms etc)/GF_Toilet.unity
     guid: 7468335c9e2e7cb48a522788c64eb5f1
+  - enabled: 1
+    path: Assets/Levels(rooms etc)/BS_BoilerRoom.unity
+    guid: 78aea8d09c134b646a43f0dd3a4227d9
+  - enabled: 1
+    path: Assets/Levels(rooms etc)/FF_BedRoom.unity
+    guid: f44851781c61be24e9353db3f040b33d
+  - enabled: 1
+    path: Assets/Levels(rooms etc)/FF_Corridor.unity
+    guid: 964159990eeed08408b78309ee0915eb
+  - enabled: 1
+    path: Assets/Levels(rooms etc)/FF_LeisureRoom.unity
+    guid: 541df0c8265d31f40af3e19bfa62e92e
+  - enabled: 1
+    path: Assets/Levels(rooms etc)/FF_StudyRoom.unity
+    guid: 8d96e8ff751059140826baf9976bfdb9
   m_configObjects: {}
