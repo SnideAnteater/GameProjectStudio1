@@ -1105,11 +1105,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 386258712089123271, guid: 3a88758bc9eb75342b25d5fdc32e805f,
-        type: 3}
-      propertyPath: m_Name
-      value: BGM
-      objectReference: {fileID: 0}
     - target: {fileID: 386258712089123265, guid: 3a88758bc9eb75342b25d5fdc32e805f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1170,6 +1165,11 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 8412f17c4b111534daf65db5bf5e9820, type: 3}
+    - target: {fileID: 386258712089123271, guid: 3a88758bc9eb75342b25d5fdc32e805f,
+        type: 3}
+      propertyPath: m_Name
+      value: BGM
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a88758bc9eb75342b25d5fdc32e805f, type: 3}
 --- !u!1 &2056037283
@@ -1340,6 +1340,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Inventory Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 4260483107912042326, guid: bb5985375d2e96c408b2118a0e39d754,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4260483107912042325, guid: bb5985375d2e96c408b2118a0e39d754,
         type: 3}
