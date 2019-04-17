@@ -896,6 +896,93 @@ PrefabInstance:
       objectReference: {fileID: 2023161143}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ad5c753afefc64428db4bddd91d6fc1, type: 3}
+--- !u!1 &845650236
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 845650240}
+  - component: {fileID: 845650239}
+  - component: {fileID: 845650238}
+  - component: {fileID: 845650237}
+  m_Layer: 0
+  m_Name: BoilerRoomEntrance
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &845650237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845650236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 674b0b841b6352f4e9dc2aff8cd562e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 2
+--- !u!114 &845650238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845650236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d227bfaa73241940b91274bcd82f4f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: BS_BoilerRoom
+  puzzlesBeforeUnlock: 0
+  lockedMessage: It's Locked.
+--- !u!61 &845650239
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845650236}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.072992325, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.111721, y: 1}
+  m_EdgeRadius: 0
+--- !u!4 &845650240
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845650236}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 30.89, y: -3.88, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &947082914
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -963,12 +1050,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2036565383928778023, guid: e96fe232e1b01d24f898f038ddedc698,
-        type: 3}
+    - target: {fileID: 365686683, guid: e96fe232e1b01d24f898f038ddedc698, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 365686683, guid: e96fe232e1b01d24f898f038ddedc698, type: 3}
+    - target: {fileID: 2036565383928778023, guid: e96fe232e1b01d24f898f038ddedc698,
+        type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
@@ -1285,7 +1372,7 @@ PrefabInstance:
     - target: {fileID: 4260483107165481711, guid: bb5985375d2e96c408b2118a0e39d754,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 5.9999924
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb5985375d2e96c408b2118a0e39d754, type: 3}
@@ -2100,16 +2187,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: CameraBound
       objectReference: {fileID: 0}
-    - target: {fileID: 8507686321874700645, guid: 53cb2cf17f8b0244fb95cfbcfab4c2eb,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: -0.1426537
-      objectReference: {fileID: 0}
-    - target: {fileID: 8507686321874700645, guid: 53cb2cf17f8b0244fb95cfbcfab4c2eb,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.7146926
-      objectReference: {fileID: 0}
     - target: {fileID: 8507686321874700644, guid: 53cb2cf17f8b0244fb95cfbcfab4c2eb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2174,6 +2251,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 10.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8507686321874700645, guid: 53cb2cf17f8b0244fb95cfbcfab4c2eb,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.1426537
+      objectReference: {fileID: 0}
+    - target: {fileID: 8507686321874700645, guid: 53cb2cf17f8b0244fb95cfbcfab4c2eb,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.7146926
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53cb2cf17f8b0244fb95cfbcfab4c2eb, type: 3}
