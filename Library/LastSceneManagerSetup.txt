@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/MergeToMainFile/GAME OVER.unity
-  isLoaded: 1
-  isActive: 1
