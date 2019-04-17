@@ -95,8 +95,15 @@ public class ClockPuzzle : MonoBehaviour
 
     public void victory()
     {
-        
+        GameManager.Instance.ClockReward(); 
+        GameManager.Instance.roomData[GameManager.Instance.currentRoomID].clockFinished = true;
+        GameManager.Instance.ReturnFromPuzzle();
         win.text = "WIN";
+    }
+
+    public void BackButton()
+    {
+        GameManager.Instance.ReturnFromPuzzle();
     }
 
     public void Interact()

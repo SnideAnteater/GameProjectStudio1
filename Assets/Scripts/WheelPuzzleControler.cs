@@ -28,7 +28,7 @@ public class WheelPuzzleControler : MonoBehaviour
         answer = GameManager.Instance.wheelPuzzleAnswer[puzzleID, 0];
         SetUp();
         Sum();
-        answerText.text = "TARGET VALUE : " + answer.ToString();//displays winning condition
+        answerText.text = answer.ToString();//displays winning condition
         Shuffle();
     }
 

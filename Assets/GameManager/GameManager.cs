@@ -48,6 +48,8 @@ public class GameManager : MonoBehaviour
         public string puzzleType;
         public int puzzleId;
         public bool puzzleSolved;
+        public bool clockAssigned;
+        public bool clockFinished;
         
     };
 
@@ -79,6 +81,8 @@ public class GameManager : MonoBehaviour
             roomData[l].puzzleType = "";
             roomData[l].puzzleId = -1;
             roomData[l].puzzleSolved = false;
+            roomData[l].clockAssigned = false;
+            roomData[l].clockFinished = false;
         }
         lastAssignedColourID = 0;
         lastAssignedWheelID = 0;
@@ -151,8 +155,8 @@ public class GameManager : MonoBehaviour
         else if (type == "Clock")
         {
             lastAssignedClockID++;
-            roomData[currentRoomID].puzzleAssigned = true;
-            roomData[currentRoomID].puzzleType = "Clock";
+            roomData[currentRoomID].clockAssigned = true;
+           // roomData[currentRoomID].puzzleType = "Clock";
             roomData[currentRoomID].puzzleId = lastAssignedClockID - 1;
             // return lastAssignedColourID - 1;
         }
@@ -187,6 +191,20 @@ public class GameManager : MonoBehaviour
             inPuzzle = true;
             prevRoomLocation = playerLocation;
            // Changed();
+            SceneManager.LoadScene(levelIndex);
+        }
+    }
+    public void ChangeSceneForClock(string levelIndex, Vector3 playerLocation)
+    {
+        /* if(SceneManager.GetActiveScene().name == fixAnsNumber1 || SceneManager.GetActiveScene().name == fixAnsNumber2)
+         {
+
+         }*/
+        if (!roomData[currentRoomID].clockFinished)//dosen't enter solved puzzles
+        {
+            inPuzzle = true;
+            prevRoomLocation = playerLocation;
+            // Changed();
             SceneManager.LoadScene(levelIndex);
         }
     }
@@ -239,6 +257,10 @@ public class GameManager : MonoBehaviour
             {
                 count++;
             }
+            if(roomData[i].clockFinished)
+            {
+                count++;
+            }
 
         }
         return count;
@@ -271,5 +293,10 @@ public class GameManager : MonoBehaviour
 
 
         //Akmal add the reward for puzzles to the inventory, i'll make puzzles call this when complete, 
+    }
+
+    public void ClockReward()
+    {
+        roomData[currentRoomID].clockFinished = true;
     }
 }
