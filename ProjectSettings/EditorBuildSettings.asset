@@ -9,6 +9,57 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
+    path: Assets/Levels(rooms etc)/BS_BoilerRoom.unity
+    guid: 78aea8d09c134b646a43f0dd3a4227d9
+  - enabled: 1
+    path: Assets/Levels(rooms etc)/FF_BedRoom.unity
+    guid: f44851781c61be24e9353db3f040b33d
+  - enabled: 1
+    path: Assets/Levels(rooms etc)/FF_Corridor.unity
+    guid: 964159990eeed08408b78309ee0915eb
+  - enabled: 1
+    path: Assets/Levels(rooms etc)/FF_LeisureRoom.unity
+    guid: 541df0c8265d31f40af3e19bfa62e92e
+  - enabled: 1
+    path: Assets/Levels(rooms etc)/FF_StudyRoom.unity
+    guid: 8d96e8ff751059140826baf9976bfdb9
+  - enabled: 1
+    path: Assets/Levels(rooms etc)/PZ_ClockPuzzle1.unity
+    guid: e1ce0c94f8ed91b448fe70c9ea048053
+  - enabled: 1
+    path: Assets/Levels(rooms etc)/PZ_ClockPuzzle2.unity
+    guid: fa32ead9a5c8e6041bb94db3ecd77857
+  - enabled: 1
+    path: Assets/Levels(rooms etc)/PZ_ClockPuzzle3.unity
+    guid: 5b54e5555e375514bb88d89aaa3c8a9a
+  - enabled: 1
+    path: Assets/Levels(rooms etc)/PZ_ColourPuzzle.unity
+    guid: 0f0b3fa76a19a0642967a667530fef12
+  - enabled: 1
+    path: Assets/Levels(rooms etc)/PZ_GearPuzzle1.unity
+    guid: f0ed2ebff1d864040bc0cf4dfb7c60ae
+  - enabled: 1
+    path: Assets/Levels(rooms etc)/PZ_GearPuzzle2.unity
+    guid: ef8e2b0d28950b44a8a8bc8f30047e1a
+  - enabled: 1
+    path: Assets/Levels(rooms etc)/PZ_GearPuzzle3.unity
+    guid: 04ef641e71843e2498eb55ab0bcdb8be
+  - enabled: 1
+    path: Assets/Levels(rooms etc)/PZ_NumberPuzzle.unity
+    guid: 964f0c3ae6366ea4195d8f8dc85c2380
+  - enabled: 1
+    path: Assets/Levels(rooms etc)/S_GameOver.unity
+    guid: a86826863914ca742b036de9f9d0bc50
+  - enabled: 1
+    path: Assets/Levels(rooms etc)/S_MainMenu.unity
+    guid: 25d611840a5983147a1491142a8f7cc9
+  - enabled: 1
+    path: Assets/Levels(rooms etc)/S_Setting.unity
+    guid: 6a255c0ae64604d479879050c4a2fb47
+  - enabled: 1
+    path: Assets/Levels(rooms etc)/TESTGARDEN.unity
+    guid: 2d24b0f29fa054641815c306b47d1888
+  - enabled: 1
     path: Assets/Levels(rooms etc)/VS_Garden.unity
     guid: 6ddb19bcef1eac94785d55316b027327
   - enabled: 1

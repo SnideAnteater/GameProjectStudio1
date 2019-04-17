@@ -4,22 +4,24 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    public AudioClip sfx;
-    AudioSource audioSc;
-    public int everySeconds;
-    bool keepPlaying = true;
+    public float playTime = 0.5f;
+    public float pauseTime = 0.5f;
+    private AudioSource sfx;
 
-     void Start()
+    void Start()
     {
-       SoundOut();
+        sfx = GetComponent<AudioSource>();
+        StartCoroutine("PlayPauseCoroutine");
     }
 
-   IEnumerable SoundOut()
+    IEnumerator PlayPauseCoroutine()
     {
-        yield return new WaitForSeconds(everySeconds);
+        while (true)
         {
-            audioSc.PlayOneShot(sfx);
-            Debug.Log("SFX played");
-        }   
+            sfx.Play();
+            yield return new WaitForSeconds(playTime);
+            sfx.Pause();
+            yield return new WaitForSeconds(pauseTime);
+        }
     }
 }
