@@ -44,7 +44,7 @@ public class Gear2 : MonoBehaviour
         if(Mathf.Abs(transform.position.x - gearAnswer.position.x ) <= positionX && 
             Mathf.Abs(transform.position.y - gearAnswer.position.y) <= positionY)
         {
-            Destroy(this.gameObject);
+            this.gameObject.SetActive(false);
             AnswerGear.SetActive(true);
             clock.gearSolved = true;//to enable clock
 
