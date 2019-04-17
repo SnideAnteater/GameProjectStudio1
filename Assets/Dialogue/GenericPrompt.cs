@@ -33,7 +33,7 @@ public class GenericPrompt : MonoBehaviour
     void OnNextButtonPress()
     {
         Debug.Log("Next Pressed");
-       // panel.SetActive(false);
+        panel.SetActive(false);
         if (buttonCallback != null) buttonCallback(true);
     }
 
