@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 29498276}
   - component: {fileID: 29498275}
   - component: {fileID: 29498277}
+  - component: {fileID: 29498278}
   m_Layer: 0
   m_Name: GF_kitchen_door
   m_TagString: Untagged
@@ -248,6 +249,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.16, y: 4.37}
   m_EdgeRadius: 0
+--- !u!114 &29498278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29498272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c4b3dd52cebc1f449706885742103fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorTexture: {fileID: 0}
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
+  glow: {r: 255, g: 200, b: 0, a: 255}
 --- !u!1001 &56655032
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -351,11 +368,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4688780568007047979, guid: 68cd98061a2c6584db6dd12a60bfe745,
-        type: 3}
-      propertyPath: m_Name
-      value: MainPlayer
-      objectReference: {fileID: 0}
     - target: {fileID: 4688780568007047975, guid: 68cd98061a2c6584db6dd12a60bfe745,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -410,6 +422,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4688780568007047979, guid: 68cd98061a2c6584db6dd12a60bfe745,
+        type: 3}
+      propertyPath: m_Name
+      value: MainPlayer
       objectReference: {fileID: 0}
     - target: {fileID: 4688780568007047972, guid: 68cd98061a2c6584db6dd12a60bfe745,
         type: 3}
