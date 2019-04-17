@@ -51,12 +51,12 @@ public class DoorForPuzzle : MonoBehaviour
     {
         print("CHANGE");
         // GameManager.Instance.prevRoomLocation = player.transform.position;
-        if(typeOfPuzzle == puzzleType.Clock)
+        if (typeOfPuzzle == puzzleType.Clock)
         {
-
+            GameManager.Instance.ChangeSceneForClock(levelName, player.transform.position);
         }
         else
-        GameManager.Instance.ChangeSceneForPuzzle(levelName, player.transform.position);
+            GameManager.Instance.ChangeSceneForPuzzle(levelName, player.transform.position);
     }
 
 

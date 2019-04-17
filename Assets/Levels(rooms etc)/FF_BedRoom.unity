@@ -201,6 +201,10 @@ GameObject:
   m_Component:
   - component: {fileID: 482838288}
   - component: {fileID: 482838287}
+  - component: {fileID: 482838292}
+  - component: {fileID: 482838291}
+  - component: {fileID: 482838290}
+  - component: {fileID: 482838289}
   m_Layer: 0
   m_Name: FF_Bedroom_foreground2
   m_TagString: Untagged
@@ -270,6 +274,75 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &482838289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 482838286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1afd534249d094aa0dce84b7b0ff59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelName: PZ_ColourPuzzle
+  typeOfPuzzle: 0
+--- !u!61 &482838290
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 482838286}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.059138656, y: -0.3622365}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 11.13, y: 2.68}
+    newSize: {x: 11.13, y: 2.68}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.5304315, y: 1.9555271}
+  m_EdgeRadius: 0
+--- !u!114 &482838291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 482838286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c4b3dd52cebc1f449706885742103fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorTexture: {fileID: 0}
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
+  glow: {r: 255, g: 200, b: 0, a: 255}
+--- !u!114 &482838292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 482838286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 674b0b841b6352f4e9dc2aff8cd562e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 4
 --- !u!1 &510775981
 GameObject:
   m_ObjectHideFlags: 0
@@ -1105,6 +1178,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 386258712089123271, guid: 3a88758bc9eb75342b25d5fdc32e805f,
+        type: 3}
+      propertyPath: m_Name
+      value: BGM
+      objectReference: {fileID: 0}
     - target: {fileID: 386258712089123265, guid: 3a88758bc9eb75342b25d5fdc32e805f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1165,11 +1243,6 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 8412f17c4b111534daf65db5bf5e9820, type: 3}
-    - target: {fileID: 386258712089123271, guid: 3a88758bc9eb75342b25d5fdc32e805f,
-        type: 3}
-      propertyPath: m_Name
-      value: BGM
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a88758bc9eb75342b25d5fdc32e805f, type: 3}
 --- !u!1 &2056037283

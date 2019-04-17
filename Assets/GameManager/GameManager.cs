@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     // public const int NUMBEROFPUZZLES = 8;
     public const int NUMBEROFWHEELPUZZLE = 4;
     public const int NUMBEROFCOLORPUZZLE = 4;
-    public const int NUMBEROFROOMS = 10;
+    public const int NUMBEROFROOMS = 30;
     //public bool[] puzzleProgress = new bool[NUMBEROFROOMS];//number represents puzzle room
 
     public int[,] wheelPuzzleAnswer = new int[NUMBEROFWHEELPUZZLE, 4];//0 = answer, 1 2 3= wheel answer positon

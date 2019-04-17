@@ -822,7 +822,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: FF_LeisureRoom
-  puzzlesBeforeUnlock: 0
+  puzzlesBeforeUnlock: 1
   lockedMessage: It's Locked.
 --- !u!61 &1345514231
 BoxCollider2D:
@@ -1501,7 +1501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: FF_BedRoom
-  puzzlesBeforeUnlock: 0
+  puzzlesBeforeUnlock: 2
   lockedMessage: It's Locked.
 --- !u!61 &2019265791
 BoxCollider2D:
@@ -1631,6 +1631,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 386258712089123271, guid: 3a88758bc9eb75342b25d5fdc32e805f,
+        type: 3}
+      propertyPath: m_Name
+      value: BGM
+      objectReference: {fileID: 0}
     - target: {fileID: 386258712089123265, guid: 3a88758bc9eb75342b25d5fdc32e805f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1685,11 +1690,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 386258712089123271, guid: 3a88758bc9eb75342b25d5fdc32e805f,
-        type: 3}
-      propertyPath: m_Name
-      value: BGM
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a88758bc9eb75342b25d5fdc32e805f, type: 3}
