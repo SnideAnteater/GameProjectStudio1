@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Levels(rooms etc)/PZ_GearPuzzle3.unity
+- path: Assets/MergeToMainFile/GAME OVER.unity
   isLoaded: 1
   isActive: 1
