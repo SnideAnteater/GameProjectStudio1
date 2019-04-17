@@ -365,7 +365,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: GF_Library
-  puzzlesBeforeUnlock: 0
+  puzzlesBeforeUnlock: 2
   lockedMessage: It's Locked.
 --- !u!61 &252029926
 BoxCollider2D:
@@ -420,6 +420,7 @@ GameObject:
   - component: {fileID: 355979514}
   - component: {fileID: 355979513}
   - component: {fileID: 355979515}
+  - component: {fileID: 355979516}
   m_Layer: 0
   m_Name: GF_corridor_stairs(lock)
   m_TagString: Untagged
@@ -505,6 +506,21 @@ MonoBehaviour:
   cursorMode: 0
   hotSpot: {x: 0, y: 0}
   glow: {r: 255, g: 200, b: 0, a: 255}
+--- !u!114 &355979516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355979512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d4e46af7810fc44093e696675b552d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stairsUnlock: {fileID: 0}
+  puzzlesBeforeUnlock: 0
+  lockedMessage: It's Locked.
 --- !u!1 &368146011
 GameObject:
   m_ObjectHideFlags: 0
@@ -1862,7 +1878,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: GF_Kitchen
-  puzzlesBeforeUnlock: 0
+  puzzlesBeforeUnlock: 1
   lockedMessage: It's Locked.
 --- !u!61 &1631200857
 BoxCollider2D:
@@ -2437,6 +2453,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2435735326064870450, guid: 35a46992b12994f4b98e358a78f42eee,
+        type: 3}
+      propertyPath: puzzlesBeforeUnlock
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35a46992b12994f4b98e358a78f42eee, type: 3}
